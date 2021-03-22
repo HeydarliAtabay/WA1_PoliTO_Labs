@@ -1,0 +1,60 @@
+/* Global */
+.vheight-100 {
+  min-height: 100vh;
+}
+
+.below-nav {
+  padding-top: 6rem;
+}
+
+.list-group-item {
+  background-color: white;
+}
+
+.list-group-item.active {
+  background-color: #16bb3d;
+  border-color: #4b6b53;
+}
+
+.list-group-item-action:hover {
+  background-color: #3cd362;
+}
+.list-group-item.hover {
+  background-color: #3cd362;
+}
+.projects-title {
+  margin-top: 2rem;
+}
+.custom-checkbox
+  .custom-control-input.important
+  ~ .custom-control-label::before {
+  border-color: red;
+}
+
+.custom-checkbox
+  .custom-control-input.important:checked
+  ~ .custom-control-label::before {
+  background-color: red;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: rgb(9, 255, 0);
+}
+.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 0.2rem rgb(60, 109, 53);
+}
+.custom-checkbox
+  .custom-control-input.important:focus
+  ~ .custom-control-label::before {
+  box-shadow: 0 0 0 0.2rem rgb(255, 148, 148);
+}
+.custom-checkbox .custom-control-input.important ~ .custom-control-label {
+  color: red;
+}
+
+.button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  margin: 0 1.5rem 1.5rem 0;
+}

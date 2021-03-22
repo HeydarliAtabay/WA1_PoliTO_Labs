@@ -1,0 +1,114 @@
+<!-- task contains(description,important,private,deadline) -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>ToDo</title>
+    <link href="custom.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Header of the page -->
+
+    <nav class="navbar navbar-dark navbar-expand-sm bg-dark fixed-top">
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#left-sidebar" aria-controls="left-sidebar" aria-expanded="false" aria-label="Toggle sidebar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f2eded" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+      <a class="navbar-brand" href="index.html">&nbsp ToDo </a>
+      
+      <form class="form-inline my-2 my-lg-0 mx-auto d-none d-sm-block" action="#" role="search" aria-label="Quick search">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search query">
+      </form>
+
+      <div class="navbar-nav ml-md-auto">
+        <a class="nav-item nav-link" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#f2eded" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </a>
+      </div>
+    
+    </nav>
+
+    <!-- Main container of the page -->
+    <!-- Sidebar-->
+    <div class="container-fluid">
+      <div class="row vheight-100">
+        <aside class="collapse d-sm-block col-sm-4 col-12 bg-light below-nav" id="left-sidebar">
+          <div class="list-group list-group-flush">
+             <a href="#" class="list-group-item list-group-item-action active">All</a>
+            <a href="#" class="list-group-item list-group-item-action">Important</a>
+            <a href="#" class="list-group-item list-group-item-action">Today</a>
+            <a href="#" class="list-group-item list-group-item-action">Next 7 Days</a>
+            <a href="#" class="list-group-item list-group-item-action">Private</a> 
+           
+          </div>
+        </aside>
+
+        <!-- main part, where the task will be shown -->
+        <main class="col-sm-8 col-12 below-nav">
+          <h1>All tasks</h1>
+
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <div class="d-flex w-100 justify-content-between">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="check-t1">
+                  <label class="custom-control-label" for="check-t1">Wake up at 07:00</label>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="d-flex w-100 justify-content-between">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="check-t2">
+                  <label class="custom-control-label" for="check-t2">Go to Porta Palazzo </label>
+                </div>
+                <small>23 march 09:00</small>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                   </div>
+            </li>
+            <li class="list-group-item">
+              <div class="d-flex w-100 justify-content-between">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input important" id="check-t3">
+                  <label class="custom-control-label" for="check-t3">Upload WA1 labs to github!</label>
+                </div>
+                <small>25 march 00:00</small>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="d-flex w-100 justify-content-between">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input important" id="check-t4">
+                  <label class="custom-control-label" for="check-t4">Watch SDP videos of Prof. Quer!</label>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="d-flex w-100 justify-content-between">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input " id="check-t5">
+                  <label class="custom-control-label" for="check-t5">Apply for some internship positions in Turin</label>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Add a new task... -->
+          <button type="button" class="btn btn-lg btn-success button">&#43;</button>
+
+        </main>
+      </div>
+    </div>
+
+   
+  </body>
+</html>
